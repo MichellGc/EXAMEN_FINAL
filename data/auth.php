@@ -2,7 +2,7 @@
 session_start();
 
 
-require_once('bdatos.php');
+require_once('dato.php');
 
 
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
@@ -30,7 +30,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
                 "codigo" => 404,
                 "mensaje" => "Usuario y/o password incorrecto"
             ];
-            
+
         }
         echo json_encode($respuesta);
     }
